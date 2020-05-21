@@ -1,0 +1,59 @@
+CHANGELOG
+
+Version 1:
+-Initial code base which calculates if a batter strikes out, walks or hits and is able to determine if the hit is a single, double, triple or HR
+-Player stats included on main file but will later be moved
+Future Plans:
+-Add base state (ex. runner on first and third or bases loaded etc.)
+-Study more info on location of hits
+-Add run counter
+
+Version 2:
+-Added function file "UpdateBases" which determines the state of the bases after a hit or walk
+-Score, RBIs and Runs can now be counted
+Future Plans:
+-Determine if out was from groundball, strikeout or flyball
+-Update bases accordingly from the type of out
+
+**1ST WORKING VERSION**
+Version 3:
+-Outs can now be determined as a groundball, flyball or strikeout
+-Updated function file "UpdateBases" to determine the state of the bases after an out
+Future Plans:
+-Revise assumptions
+-Revise player stats to use BA to be more user-friendly
+-Setup code to simulate a game against an opponent and find win rate
+
+**2ND WORKING VERSION** 
+Version 4:
+-Player data is now calculated through the "Readexcel" function file
+-Able to pull data from any batter as long as they were not traded mid season
+Future Plans:
+-Revise assumptions
+-Setup code to simulate a game against an opponent
+-Prompt user for input for batters
+-Able to pull batter data from players traded mid season
+-Make .exe file so others can use
+-Find database for groundouts/flyouts
+-Seperate score sheet for each game instead of accumulating the data (easier for stat analysis)
+
+**3RD WORKING VERSION**
+Version GUI:
+-Code overhaul to support GUI:
+-Main file changed to function file
+-Score sheet now also keeps record of each game and not just the accumulation of all iterations (currently not used but may be used later for stat analysis)
+-Batter excel file is pre loaded when GUI is run to save on run time
+-Standard deviation and histogram is created for runs
+-Still not able to pull data from players traded mid season
+Future Plans:
+-Revise assumptions
+-Setup code to simulate a game against an opponent
+-Able to pull batter data from players traded mid season (maybe accumulate player stats for the whole year or find a way to seperate)
+-Find database for groundouts/flyouts
+
+
+Overall Plans:
+-Pitching/defense can be accounted for
+-Statistical analysis (distribution curves,% of perfect/no hitter etc.)
+-Run squared win-rate vs real win-rate
+
